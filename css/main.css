@@ -27,6 +27,23 @@ SLIDERS
     max-height: 39rem;
 }
 
+/*equipo*/
+#numeros-local div {
+	padding: 0 20px 0 0;
+	height: 48px;
+}
+
+#numeros-local div:not(:last-child) {
+	border-right: 2px solid #3f3f3f;
+}
+
+#numeros-local div:not(:first-child) {
+	padding-left: 20px;
+}
+
+#numeros-local p{
+	margin:0;
+}
 /*MEDIA QUERIES PANTALLA*/
 @media (max-width:768px) {
     #intro, #equipo{
@@ -36,6 +53,28 @@ SLIDERS
         width: 100% !important;
         text-align: center;
     }
+	#equipo p{
+			display:none;
+	}
+	
+	 #bg-contacto{
+		top: 0px;
+		
+ }
+}
+
+/*MEDIA QUERIES pantalla media*/
+@media (max-width:1200px) {
+    #local{
+       flex-wrap:wrap;
+       padding-top: 30px;
+    }
+	 .wrapper {
+	width: 90%;
+	margin: auto;
+	padding-top:50px;
+ }
+ 
 }
 
 /*MEDIA QUERIES pantalla enana*/
@@ -45,3 +84,48 @@ SLIDERS
        justify-content: center !important;
     }
 }
+
+/*MAPA*/
+ #local {
+		background: #f3f3f3;
+		padding-bottom: 30px;
+		display: flex;
+		justify-content: center;
+ }
+ 
+ .mapa{
+	padding-top:5%;
+margin-left: 5%;	
+ }
+ .wrapper {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10% !important;
+	padding-top:15%;
+ }
+ 
+ /*FORMULARIO CONTACTO*/
+ #bg-contacto{
+		position:relative;
+		top: 0px;
+ }
+ #seccion-contacto{
+	 background-color: #1b2a43;
+	 min-height:1000px;
+	 position:relative;
+ }
+ 
+ #contenedor-formulario{
+	 position:absolute;
+	 top:60%;
+	 left:50%;
+	 transform: translate(-50%, -50%);
+	 background: #fbfafa;
+	 border-radius:5px;
+	 max-width: 800px;
+	 
+ }
+ 
+ #titulo-formulario{
+		color: #3f3f3f;
+ }
